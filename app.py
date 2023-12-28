@@ -56,7 +56,7 @@ from urllib.parse import quote
 
 def queryRecords(tableLogicNames,fetchXml):
     # 定义Dynamics 365实例的URL和API版本
-    url = "https://udkanzai-dev1.crm7.dynamics.com/api/data/v9.2/"
+    url = "https://udkanzai1-dev1.crm7.dynamics.com/api/data/v9.2/"
     # 定义请求头，包括OAuth认证信息和内容类型
     headers = {  
         'Content-Type': 'application/xml',  
@@ -78,7 +78,7 @@ def queryRecords(tableLogicNames,fetchXml):
 def run_conversation(prompt,feedback):
     # Step 1: send the conversation and available functions to the model
     messages = [{"role":"system","content":'''Our purchase system is customized based on Dynamics 365. Its information as below,
-Organization: https://udkanzai-dev1.crm7.dynamics.com"
+Organization: https://udkanzai1-dev1.crm7.dynamics.com"
 Table logic name: msdyn_purchaseorder Description: Purchase Order
     column logic name: createdby Description: The creator's user id which is the systemuser table's systemuserid
 
