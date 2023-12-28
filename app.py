@@ -31,7 +31,7 @@ import openai
 
 
 # 加载.env文件  
-load_dotenv("en1106.env")  
+load_dotenv("en1106t.env")  
 
 os.environ["OPENAI_API_TYPE"] = os.environ["Azure_OPENAI_API_TYPE1"]
 os.environ["OPENAI_API_BASE"] = os.environ["Azure_OPENAI_API_BASE1"]
