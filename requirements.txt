@@ -1,0 +1,8 @@
+openai
+anthropic
+langchain
+google-generativeai
+gradio
+promise
+asyncio
+python-dotenv
